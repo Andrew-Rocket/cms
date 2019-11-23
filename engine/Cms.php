@@ -2,6 +2,8 @@
 
 namespace Engine;
 
+use Engine\Core\Database\Connection;
+
 class Cms
 {
 
@@ -21,8 +23,8 @@ class Cms
      */
     public function run()
     {
-        $db = $this->di->get('test2');
-        print_r($db);
+
+        print_r($this->di);
     }
 
 }
